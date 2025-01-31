@@ -22,7 +22,7 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
     if (info.menuItemId === "copy-page-title") {
         browser.tabs.executeScript(tab.id, { code: "navigator.clipboard.writeText(document.title);" })
             .catch(err => console.error("Failed to copy title: ", err));
-    } else if (info.menuItemId === "copy-tab-url") {
+    } else if (info.menuItemId === "copy-page-url") {
         browser.tabs.executeScript(tab.id, { code: "navigator.clipboard.writeText(window.location.href);" })
             .catch(err => console.error("Failed to copy URL: ", err));
     }

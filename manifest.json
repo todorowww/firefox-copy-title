@@ -4,7 +4,7 @@
   "description": "Quickly copy tab title or URL.",
   "author": "Slobodan Todorov",
   "homepage_url": "https://github.com/todorowww/firefox-copy-title",
-  "version": "1.0",
+  "version": "1.0.1",
   "permissions": ["contextMenus", "clipboardWrite", "activeTab"],
   "background": {
     "scripts": ["main.js"],
